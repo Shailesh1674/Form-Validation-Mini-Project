@@ -73,3 +73,25 @@ body {
             border: 1px solid #f5c6cb;
             display: none;
         }
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+    width: calc(100% - 60px);
+    display: inline-block;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    padding: 8px 12px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
