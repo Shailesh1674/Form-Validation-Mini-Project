@@ -16,9 +16,17 @@
             <label for="PhoneNo">Phone Number: </label>
             <input type="text" name="PhoneNo" id="phoneno">
             <label for="pass">Password: </label>
-            <input type="password" name="pass" id="pass">
+            <div class="password-wrapper">
+                <input type="password" name="pass" id="pass">
+                <button type="button" class="toggle-password" data-target="#pass">Show</button>
+            </div>
+
             <label for="confirmpass">Confirm Password: </label>
-            <input type="password" name="confirmpass" id="confirmpass">
+            <div class="password-wrapper">
+                <input type="password" name="confirmpass" id="confirmpass">
+                <button type="button" class="toggle-password" data-target="#confirmpass">Show</button>
+            </div>
+
         </div>
         <input type="submit" value="Submit" id="submit">
     </div>
