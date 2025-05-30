@@ -53,4 +53,12 @@ $("#submit").click(function(){
         $("#errors").html(missingfields + errormessage).fadeIn();
     }
 
+}
+    
+);
+$(".toggle-password").click(function() {
+    var targetInput = $($(this).attr("data-target"));
+    var type = targetInput.attr("type") === "password" ? "text" : "password";
+    targetInput.attr("type", type);
+    $(this).text(type === "password" ? "Show" : "Hide");
 });
